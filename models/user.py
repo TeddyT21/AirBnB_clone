@@ -1,19 +1,22 @@
 #!/usr/bin/python3
-"""Defines the User class."""
+"""
+0x00. AirBnB clone - The console
+User module
+"""
 from models.base_model import BaseModel
 
 
 class User(BaseModel):
-    """Represent a User.
-
-    Attributes:
-        email (str): The email of the user.
-        password (str): The password of the user.
-        first_name (str): The first name of the user.
-        last_name (str): The last name of the user.
+    """
+    Defines attributes/methods for the User class, subclass of BaseModel
+    Other attributes/methods are inherited from BaseModel
     """
 
     email = ""
     password = ""
     first_name = ""
     last_name = ""
+
+    # def __init__(self, *args, **kwargs):
+    #     """initialize variables and methods"""
+    #     super().__init__(self, *args, **kwargs)
